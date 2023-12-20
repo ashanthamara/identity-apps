@@ -1,5 +1,17 @@
 # @wso2is/core
 
+## 2.0.24
+
+### Patch Changes
+
+- [#5091](https://github.com/wso2/identity-apps/pull/5091) [`deae1075ee`](https://github.com/wso2/identity-apps/commit/deae1075ee47b9288ca607e59edbee275043ad3b) Thanks [@amanda-ariyaratne](https://github.com/amanda-ariyaratne)! - Add config to show/hide saas applications in legacy mode
+
+## 2.0.23
+
+### Patch Changes
+
+- [#5044](https://github.com/wso2/identity-apps/pull/5044) [`c6dc46bcd2`](https://github.com/wso2/identity-apps/commit/c6dc46bcd25b0571280f2ea4b1bf9b98a70c9dab) Thanks [@savindi7](https://github.com/savindi7)! - Hide Xacml feature with config
+
 ## 2.0.22
 
 ### Patch Changes

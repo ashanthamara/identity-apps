@@ -3060,7 +3060,7 @@ export const extensions: Extensions = {
                     2: "characters."
                 },
                 usernameAlphanumeric: "Restrict to alphanumeric (a-z, A-Z, 0-9).",
-                usernameSpecialCharsHint: "Any combination of letters (a-z, A-Z), numbers (0-9), and the following characters: !@#$%&'*+\\=?^_`.{|}~-."
+                usernameSpecialCharsHint: "Any combination of letters (a-z, A-Z), numbers (0-9), and the following characters: !@#$%&'*+\\=?^_.{|}~-."
             },
             alternativeLoginIdentifierPage: {
                 pageTitle: "Alternative Login Identifiers",
@@ -3303,8 +3303,8 @@ export const extensions: Extensions = {
                         usernameHint: "Must be an alphanumeric (a-z, A-Z, 0-9) string between {{minLength}} to " +
                             "{{maxLength}} characters including at least one letter.",
                         usernameSpecialCharHint: "Must be {{minLength}} to {{maxLength}} characters long, " +
-                            "including at least one letter, and may contain a combination of the following" +
-                            "characters: a-z, A-Z, 0-9, !@#$%&'*+\\=?^_`.{|}~-.",
+                            "including at least one letter, and may contain a combination of the following " +
+                            "characters: a-z, A-Z, 0-9, !@#$%&'*+\\=?^_.{|}~-.",
                         usernameLength: "The username length should be between {{minLength}} and {{maxLength}}.",
                         usernameSymbols: "The username should consist of alphanumeric characters (a-z, A-Z, 0-9) and must include at least one letter.",
                         usernameSpecialCharSymbols: "Please choose a valid username that adheres to the given guidelines."
@@ -4027,7 +4027,10 @@ export const extensions: Extensions = {
                         emailUnavailableWarning: "WARNING: Cannot find an email address for the user account." +
                             "Please provide an email address to proceed with inviting the user to reset the password.",
                         emailResetWarning: "An email with a link to reset the password will be sent to the provided " +
-                            "email address for the user to set their own password."
+                            "email address for the user to set their own password.",
+                        passwordResetConfigDisabled: "Password reset via recovery email is not enabled. Please make " +
+                            "sure to enable it from <1> " +
+                            " Login and Registration </1> configurations."
                     }
                 }
             },

@@ -208,7 +208,7 @@
         "checkSessionInterval": 5,
         "userIdleTimeOut": 1800
     },
-    "getProfileInfoFromIDToken": true,
+    "getProfileInfoFromIDToken": false,
     "superTenantProxy": "",
     "legacyAuthzRuntime": false,
     "legacyMode": false,
@@ -604,7 +604,6 @@
                         "internal_guest_mgt_invite_list"
                     ],
                     "create": [
-                        "internal_guest_mgt_invite_validate",
                         "internal_guest_mgt_invite_add"
                     ],
                     "update": [
@@ -1051,20 +1050,21 @@
             "Console",
             "My Account"
         ],
+        "isXacmlConnectorEnabled": false,
         "legacyMode": {
             "apiResources": true,
             "applicationListSystemApps": false,
             "applicationOIDCSubjectIdentifier": false,
             "applicationRequestPathAuthentication": false,
             "applicationSystemAppsSettings": false,
-            "applicationXacmlAuthorization": false,
             "approvals": false,
             "certificates": false,
             "loginAndRegistrationEmailDomainDiscovery": true,
             "organizations": true,
             "rolesV1": false,
             "roleMapping": false,
-            "secretsManagement": false
+            "secretsManagement": false,
+            "saasApplications": false
         },
         "theme": {
             "name": "wso2is"

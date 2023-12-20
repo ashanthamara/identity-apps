@@ -216,7 +216,6 @@ export interface LegacyModeInterface {
     applicationOIDCSubjectIdentifier: boolean;
     applicationRequestPathAuthentication: boolean;
     applicationSystemAppsSettings: boolean;
-    applicationXacmlAuthorization: boolean;
     approvals: boolean;
     certificates: boolean;
     loginAndRegistrationEmailDomainDiscovery: boolean;
@@ -224,4 +223,5 @@ export interface LegacyModeInterface {
     rolesV1: boolean;
     roleMapping: boolean;
     secretsManagement: boolean;
+    saasApplications: boolean;
 }

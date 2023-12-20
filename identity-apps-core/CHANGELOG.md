@@ -1,5 +1,67 @@
 # @wso2is/identity-apps-core
 
+## 2.0.105
+
+### Patch Changes
+
+- [#5094](https://github.com/wso2/identity-apps/pull/5094) [`8af5ef5d02`](https://github.com/wso2/identity-apps/commit/8af5ef5d025a9dec223e49d951c1e7685b0c19fb) Thanks [@pavinduLakshan](https://github.com/pavinduLakshan)! - Fix broken branding preference import paths
+
+## 2.0.104
+
+### Patch Changes
+
+- [#5023](https://github.com/wso2/identity-apps/pull/5023) [`21a47f85f6`](https://github.com/wso2/identity-apps/commit/21a47f85f6b17ea8bc38b90172ab3789b263c35a) Thanks [@Avarjana](https://github.com/Avarjana)! - Fix typo and exclude back tick from username.
+
+## 2.0.103
+
+### Patch Changes
+
+- [#5083](https://github.com/wso2/identity-apps/pull/5083) [`2653310a5b`](https://github.com/wso2/identity-apps/commit/2653310a5bdd7ec96985b4c2c0b7b2ccbdb4136a) Thanks [@pavinduLakshan](https://github.com/pavinduLakshan)! - Fix UI issues in displaying long usernames in dynamic prompt generic form
+
+- Updated dependencies [[`2653310a5b`](https://github.com/wso2/identity-apps/commit/2653310a5bdd7ec96985b4c2c0b7b2ccbdb4136a)]:
+  - @wso2is/theme@2.0.51
+
+## 2.0.102
+
+### Patch Changes
+
+- [#5084](https://github.com/wso2/identity-apps/pull/5084) [`eaf0d12ac9`](https://github.com/wso2/identity-apps/commit/eaf0d12ac96754566d7d6d8dfb0cb03f1bcf6ecb) Thanks [@mpmadhavig](https://github.com/mpmadhavig)! - Apply tenantQualifiedName changes.
+
+## 2.0.101
+
+### Patch Changes
+
+- [#5086](https://github.com/wso2/identity-apps/pull/5086) [`be1a05f6b9`](https://github.com/wso2/identity-apps/commit/be1a05f6b98017400802df4048eb91808428d633) Thanks [@Thisara-Welmilla](https://github.com/Thisara-Welmilla)! - Revert JIT provisioning improvement
+
+## 2.0.100
+
+### Patch Changes
+
+- [#5074](https://github.com/wso2/identity-apps/pull/5074) [`ad19f3f555`](https://github.com/wso2/identity-apps/commit/ad19f3f555e5623f46f3085a764e94dfb2eb40ef) Thanks [@Thisara-Welmilla](https://github.com/Thisara-Welmilla)! - Skip username validation from UI.
+
+## 2.0.99
+
+### Patch Changes
+
+- [#5029](https://github.com/wso2/identity-apps/pull/5029) [`3f2128994a`](https://github.com/wso2/identity-apps/commit/3f2128994ae4a5b809f07287fb590317e62ca74a) Thanks [@mpmadhavig](https://github.com/mpmadhavig)! - Append tenant to the username before validation and JIT consent flow password validation logic refactor.
+
+## 2.0.98
+
+### Patch Changes
+
+- [#5014](https://github.com/wso2/identity-apps/pull/5014) [`05265988d4`](https://github.com/wso2/identity-apps/commit/05265988d4f26237adcbc9fd2786a94b165de534) Thanks [@NipuniBhagya](https://github.com/NipuniBhagya)! - Fix issues with JIT provisioning error message
+
+## 2.0.97
+
+### Patch Changes
+
+- [#5057](https://github.com/wso2/identity-apps/pull/5057) [`36ae93a6fa`](https://github.com/wso2/identity-apps/commit/36ae93a6fa5d44cba538923cbfffedbb06626173) Thanks [@Achintha444](https://github.com/Achintha444)! - (Fix) Fix generate password button is not aligned in the add user modal
+
+* [#5044](https://github.com/wso2/identity-apps/pull/5044) [`c6dc46bcd2`](https://github.com/wso2/identity-apps/commit/c6dc46bcd25b0571280f2ea4b1bf9b98a70c9dab) Thanks [@savindi7](https://github.com/savindi7)! - Hide Xacml feature with config
+
+* Updated dependencies [[`36ae93a6fa`](https://github.com/wso2/identity-apps/commit/36ae93a6fa5d44cba538923cbfffedbb06626173)]:
+  - @wso2is/theme@2.0.49
+
 ## 2.0.96
 
 ### Patch Changes

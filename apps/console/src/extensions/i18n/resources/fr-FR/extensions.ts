@@ -3135,9 +3135,7 @@ export const extensions: Extensions = {
                     2: "caractères."
                 },
                 usernameAlphanumeric: "Restreindre aux caractères alphanumériques (a-z, A-Z, 0-9).",
-                usernameSpecialCharsHint: "TDoit contenir entre {minLength}} et {{maxLength}} caractères, dont au " +
-                    "moins une lettre, et peut contenir une combinaison des caractères " +
-                    "suivants: a-z, A-Z, 0-9, !@#$%&'*+\\=?^_`.{|}~-."
+                usernameSpecialCharsHint: "Toute combinaison de lettres (a-z, A-Z), de chiffres (0-9) et des caractères suivants: !@#$%&'*+\\=?^_.{|}~-."
             },
             alternativeLoginIdentifierPage: {
                 pageTitle: "Identifiants de connexion alternatifs",
@@ -3388,8 +3386,9 @@ export const extensions: Extensions = {
                         },
                         usernameHint: "Doit être une chaîne alphanumérique (a-z, A-Z, 0-9) entre {{minLength}} et {{maxLength}} caractères comprenant " +
                             "au moins une lettre.",
-                        usernameSpecialCharHint: "Doit contenir entre {minLength}} et {{maxLength}} caractères et ne peut contenir qu'une " +
-                            "combinaison de lettres (a-z, A-Z), de chiffres (0-9) et des caractères suivants: !@#$%&'*+\\=?^_`.{|}~-.",
+                        usernameSpecialCharHint: "TDoit contenir entre {minLength}} et {{maxLength}} caractères, dont au " +
+                            "moins une lettre, et peut contenir une combinaison des caractères " +
+                            "suivants: a-z, A-Z, 0-9, !@#$%&'*+\\=?^_.{|}~-.",
                         usernameLength: "La longueur du nom d'utilisateur doit être comprise " +
                             "entre {{minLength}} et {{maxLength}}.",
                         usernameSymbols: "Le nom d'utilisateur doit être composé de caractères alphanumériques (a-z, A-Z, 0-9) et doit inclure au moins une lettre.",
@@ -4184,7 +4183,10 @@ export const extensions: Extensions = {
                             " le compte d'utilisateur. Veuillez fournir une adresse e-mail pour inviter" +
                             " l'utilisateur à réinitialiser le mot de passe.",
                         emailResetWarning: "Un e-mail avec un lien pour réinitialiser le mot de passe sera envoyé à " +
-                            "l'adresse e-mail fournie pour que l'utilisateur puisse définir son propre mot de passe."
+                            "l'adresse e-mail fournie pour que l'utilisateur puisse définir son propre mot de passe.",
+                        passwordResetConfigDisabled: "La réinitialisation du mot de passe via l'e-mail de récupération " +
+                            "n'est pas activée. Veuillez vous assurer de l'activer dans les configurations " +
+                            "<1> Connexion et inscription </1>."
                     }
                 }
             },

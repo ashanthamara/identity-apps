@@ -3656,7 +3656,7 @@ export const console: ConsoleNS = {
                         actionTitle: "{{ state }} Connection",
                         header: "{{ state }} connection",
                         subheader: "Once you disable it, it can no longer be used until you enable it again.",
-                        subheader2: "Enable the identity provider to use it with your applications."
+                        subheader2: "Enable the connection to use it with your applications."
                     },
                     header: "Danger Zone"
                 },
@@ -4367,12 +4367,12 @@ export const console: ConsoleNS = {
                     },
                     generalDetails: {
                         description: {
-                            hint: "A text description of the identity provider.",
+                            hint: "A text description of the connection.",
                             label: "Description",
-                            placeholder: "Enter a description of the identity provider."
+                            placeholder: "Enter a description of the connection."
                         },
                         image: {
-                            hint: "A URL for the image of the identity provider for display purposes. If not provided" +
+                            hint: "A URL for the image of the connection for display purposes. If not provided" +
                                 " a generated thumbnail will be displayed. Recommended size is 200x200 pixels.",
                             label: "Logo",
                             placeholder: "https://myapp-resources.io/my_app_image.png"
@@ -4382,10 +4382,10 @@ export const console: ConsoleNS = {
                             label: "Name",
                             placeholder: "Enter a name for the connection.",
                             validations: {
-                                duplicate: "An identity provider already exists with this name",
-                                empty: "Identity Provider name is required",
-                                maxLengthReached: "Identity provider name cannot exceed {{ maxLength }} characters.",
-                                required: "Identity Provider name is required"
+                                duplicate: "A connection already exists with this name",
+                                empty: "Connection name is required",
+                                maxLengthReached: "Connection name cannot exceed {{ maxLength }} characters.",
+                                required: "Connection name is required"
                             }
                         },
                         issuer: {
@@ -9609,7 +9609,7 @@ export const console: ConsoleNS = {
                             message: "Something went wrong"
                         },
                         success: {
-                            description: "Successfully the new OIDC scope.",
+                            description: "Successfully created the new OIDC scope.",
                             message: "Creation successful"
                         }
                     },
@@ -10207,7 +10207,16 @@ export const console: ConsoleNS = {
                         placeholder: "Search by Name"
                     },
                     subOrganizations: "Organizations",
-                    switchLabel: "Organization"
+                    switchLabel: "Organization",
+                    switchButton: "Switch to Organization",
+                    notifications: {
+                        switchOrganization: {
+                            genericError: {
+                                description: "Couldn't switch to the selected organization.",
+                                message: "Something went wrong"
+                            }
+                        }
+                    }
                 },
                 title: "Organizations"
             },

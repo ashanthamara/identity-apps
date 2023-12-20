@@ -4011,23 +4011,23 @@ export const console: ConsoleNS = {
                     },
                     generalDetails: {
                         description: {
-                            hint: "අනන්‍යතා සැපයුම්කරු පිළිබඳ අර්ථවත් විස්තරයක්.",
+                            hint: "සම්බන්ධතාවය පිළිබඳ අර්ථවත් විස්තරයක්.",
                             label: "විස්තර",
-                            placeholder: "අනන්‍යතා සැපයුම්කරුගේ විස්තරයක් ඇතුළත් කරන්න."
+                            placeholder: "සම්බන්ධතාවය පිළිබඳ විස්තරයක් ඇතුළත් කරන්න."
                         },
                         image: {
-                            hint: "අනන්‍යතා සැපයුම්කරුගේ රූපය විමසීමට URL ය.",
-                            label: "හැඳුනුම්පත් සපයන්නාගේ පින්තූර URL",
+                            hint: "සම්බන්ධතාවයේ රූපය විමසීමට URL ය.",
+                            label: "සම්බන්ධතාවයේ පින්තූර URL ය",
                             placeholder: "උදා. https"
                         },
                         name: {
-                            hint: "මෙම අනන්‍යතා සැපයුම්කරු සඳහා අද්විතීය නමක් ඇතුළත් කරන්න.",
-                            label: "හැඳුනුම්පත් සපයන්නාගේ නම",
-                            placeholder: "අනන්‍යතා සැපයුම්කරු සඳහා නමක් ඇතුළත් කරන්න.",
+                            hint: "මෙම සම්බන්ධතාවය සඳහා අද්විතීය නමක් ඇතුළත් කරන්න.",
+                            label: "සම්බන්ධතාවයේ නම",
+                            placeholder: "සම්බන්ධතාවය සඳහා නමක් ඇතුළත් කරන්න.",
                             validations: {
-                                duplicate: "මෙම නම සමඟ අනන්‍යතා සැපයුම්කරුවෙකු දැනටමත් සිටී",
-                                empty: "අනන්‍යතා සැපයුම්කරුගේ නම අවශ්‍ය වේ",
-                                maxLengthReached: "අනන්‍යතා සැපයුම්කරුගේ නමට අක්ෂර {{ maxLength }} කට වඩා තිබිය නොහැක."
+                                duplicate: "මෙම නම සමඟ සම්බන්ධතාවයක් දැනටමත් පවතී",
+                                empty: "සම්බන්ධතාවයේ නම අවශ්‍ය වේ",
+                                maxLengthReached: "සම්බන්ධතාවයේ නමට අක්ෂර {{ maxLength }} කට වඩා තිබිය නොහැක."
                             }
                         }
                     },
@@ -7678,7 +7678,7 @@ export const console: ConsoleNS = {
                             message: "යම් දෝෂයක් ඇති වී ඇත"
                         },
                         success: {
-                            description: "නව OIDC විෂය පථය සාර්ථකව",
+                            description: "නව OIDC විෂය පථය සාර්ථකව නිර්මාණය කරන ලදී",
                             message: "නිර්මාණය සාර්ථකයි"
                         }
                     },
@@ -8249,7 +8249,16 @@ export const console: ConsoleNS = {
                     },
                     goBack: "ආපසු යන්න",
                     subOrganizations: "සංවිධාන",
-                    switchLabel: "සංවිධානය"
+                    switchLabel: "සංවිධානය",
+                    switchButton: "සංවිධානය වෙත මාරු වන්න",
+                    notifications: {
+                        switchOrganization: {
+                            genericError: {
+                                description: "ආයතනය වෙත මාරු කිරීමේදී දෝෂයක් ඇතිවිය",
+                                message: "යම්කිසි වරදක් සිදුවී ඇත."
+                            }
+                        }
+                    }
                 },
                 title: "සංවිධාන"
             },

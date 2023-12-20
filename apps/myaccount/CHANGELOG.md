@@ -1,5 +1,66 @@
 # @wso2is/myaccount
 
+## 2.2.70
+
+### Patch Changes
+
+- [#5097](https://github.com/wso2/identity-apps/pull/5097) [`2a3ec9029a`](https://github.com/wso2/identity-apps/commit/2a3ec9029a3d3d25fe791f199e2765800b6c2f66) Thanks [@nipunsampath](https://github.com/nipunsampath)! - Add option to switch to a particular sub organization from its settings page.
+
+- Updated dependencies [[`2a3ec9029a`](https://github.com/wso2/identity-apps/commit/2a3ec9029a3d3d25fe791f199e2765800b6c2f66)]:
+  - @wso2is/i18n@2.0.83
+
+## 2.2.69
+
+### Patch Changes
+
+- [#5050](https://github.com/wso2/identity-apps/pull/5050) [`b3b5a88a90`](https://github.com/wso2/identity-apps/commit/b3b5a88a90bac33a6072cd2a9afb603f2a652708) Thanks [@dhaura](https://github.com/dhaura)! - Add Functionality Enable or Disable ID Token Issuer Validation in My Account and Console
+
+## 2.2.68
+
+### Patch Changes
+
+- [#5023](https://github.com/wso2/identity-apps/pull/5023) [`21a47f85f6`](https://github.com/wso2/identity-apps/commit/21a47f85f6b17ea8bc38b90172ab3789b263c35a) Thanks [@Avarjana](https://github.com/Avarjana)! - Fix typo and exclude back tick from username.
+
+- Updated dependencies [[`21a47f85f6`](https://github.com/wso2/identity-apps/commit/21a47f85f6b17ea8bc38b90172ab3789b263c35a)]:
+  - @wso2is/i18n@2.0.82
+
+## 2.2.67
+
+### Patch Changes
+
+- [#5043](https://github.com/wso2/identity-apps/pull/5043) [`16d5e3da5a`](https://github.com/wso2/identity-apps/commit/16d5e3da5a8f3691bc32c4a0559e4d4536571fdd) Thanks [@brionmario](https://github.com/brionmario)! - [Legacy Mode] Fix Console/My Account browser path issues
+
+## 2.2.66
+
+### Patch Changes
+
+- [#5083](https://github.com/wso2/identity-apps/pull/5083) [`2653310a5b`](https://github.com/wso2/identity-apps/commit/2653310a5bdd7ec96985b4c2c0b7b2ccbdb4136a) Thanks [@pavinduLakshan](https://github.com/pavinduLakshan)! - Fix UI issues in displaying long usernames in dynamic prompt generic form
+
+- Updated dependencies [[`2653310a5b`](https://github.com/wso2/identity-apps/commit/2653310a5bdd7ec96985b4c2c0b7b2ccbdb4136a)]:
+  - @wso2is/theme@2.0.51
+
+## 2.2.65
+
+### Patch Changes
+
+- [#5075](https://github.com/wso2/identity-apps/pull/5075) [`0256394c2f`](https://github.com/wso2/identity-apps/commit/0256394c2f8c9e5d6d5150cf72ed38a283d9df58) Thanks [@DilshanSenarath](https://github.com/DilshanSenarath)! - Change the connection create error content
+
+- Updated dependencies [[`0256394c2f`](https://github.com/wso2/identity-apps/commit/0256394c2f8c9e5d6d5150cf72ed38a283d9df58)]:
+  - @wso2is/i18n@2.0.81
+
+## 2.2.64
+
+### Patch Changes
+
+- [#5057](https://github.com/wso2/identity-apps/pull/5057) [`36ae93a6fa`](https://github.com/wso2/identity-apps/commit/36ae93a6fa5d44cba538923cbfffedbb06626173) Thanks [@Achintha444](https://github.com/Achintha444)! - (Fix) Fix generate password button is not aligned in the add user modal
+
+* [#5044](https://github.com/wso2/identity-apps/pull/5044) [`c6dc46bcd2`](https://github.com/wso2/identity-apps/commit/c6dc46bcd25b0571280f2ea4b1bf9b98a70c9dab) Thanks [@savindi7](https://github.com/savindi7)! - Hide Xacml feature with config
+
+* Updated dependencies [[`36ae93a6fa`](https://github.com/wso2/identity-apps/commit/36ae93a6fa5d44cba538923cbfffedbb06626173), [`c6dc46bcd2`](https://github.com/wso2/identity-apps/commit/c6dc46bcd25b0571280f2ea4b1bf9b98a70c9dab)]:
+  - @wso2is/theme@2.0.49
+  - @wso2is/core@2.0.23
+  - @wso2is/access-control@2.0.12
+
 ## 2.2.63
 
 ### Patch Changes

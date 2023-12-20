@@ -1,5 +1,23 @@
 # @wso2is/i18n
 
+## 2.0.83
+
+### Patch Changes
+
+- [#5097](https://github.com/wso2/identity-apps/pull/5097) [`2a3ec9029a`](https://github.com/wso2/identity-apps/commit/2a3ec9029a3d3d25fe791f199e2765800b6c2f66) Thanks [@nipunsampath](https://github.com/nipunsampath)! - Add option to switch to a particular sub organization from its settings page.
+
+## 2.0.82
+
+### Patch Changes
+
+- [#5023](https://github.com/wso2/identity-apps/pull/5023) [`21a47f85f6`](https://github.com/wso2/identity-apps/commit/21a47f85f6b17ea8bc38b90172ab3789b263c35a) Thanks [@Avarjana](https://github.com/Avarjana)! - Fix typo and exclude back tick from username.
+
+## 2.0.81
+
+### Patch Changes
+
+- [#5075](https://github.com/wso2/identity-apps/pull/5075) [`0256394c2f`](https://github.com/wso2/identity-apps/commit/0256394c2f8c9e5d6d5150cf72ed38a283d9df58) Thanks [@DilshanSenarath](https://github.com/DilshanSenarath)! - Change the connection create error content
+
 ## 2.0.80
 
 ### Patch Changes

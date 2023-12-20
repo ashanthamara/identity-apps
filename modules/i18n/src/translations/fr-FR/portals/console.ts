@@ -7851,7 +7851,7 @@ export const console: ConsoleNS = {
                             message: "Quelque chose s'est mal passé"
                         },
                         success: {
-                            description: "Réussir le nouveau scope OIDC",
+                            description: "Création réussie du nouveau champ d'application OIDC",
                             message: "Création réussie"
                         }
                     },
@@ -8425,7 +8425,16 @@ export const console: ConsoleNS = {
                     },
                     goBack: "Retourner",
                     subOrganizations: "Organisations",
-                    switchLabel: "Organisation"
+                    switchLabel: "Organisation",
+                    switchButton: "Passer à l'organisation",
+                    notifications: {
+                        switchOrganization: {
+                            genericError: {
+                                description: "Impossible de basculer vers l'organisation sélectionnée.",
+                                message: "Quelque chose s'est mal passé"
+                            }
+                        }
+                    }
                 },
                 title: "Organisations"
             },

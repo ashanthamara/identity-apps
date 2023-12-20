@@ -77,8 +77,12 @@
     },
     {% endif %}
     "i18nResourcePath": "{{ console.i18n_resource_path }}",
-    {% if console.is_sass is defined %}
-        "isSaas": "{{ console.is_sass }}",
+    {% if console.is_saas is defined %}
+    "isSaas": {{ console.is_saas }},
+    {% elif legacy_mode.enabled is defined %}
+    "isSaas": {{ legacy_mode.enabled }},
+    {% elif legacy_authz_runtime.enable is defined %}
+    "isSaas": {{ legacy_authz_runtime.enable }},
     {% endif %}
     "loginCallbackPath": "{{ console.login_callback_path }}",
     "logoutCallbackPath": "{{ console.logout_callback_path }}",
@@ -1696,6 +1700,9 @@
                 {% endfor %}
             {% endif %}
         ],
+        {% if console.ui.isXacmlConnectorEnabled is defined %}
+        "isXacmlConnectorEnabled": {{ console.ui.isXacmlConnectorEnabled }},
+        {% endif %}
         "legacyMode": {
             {% if legacy_mode.enable == true %}
             "apiResources": false,
@@ -1703,14 +1710,14 @@
             "applicationOIDCSubjectIdentifier": true,
             "applicationRequestPathAuthentication": true,
             "applicationSystemAppsSettings": true,
-            "applicationXacmlAuthorization": true,
             "approvals": true,
             "certificates": true,
             "loginAndRegistrationEmailDomainDiscovery": false,
             "organizations": false,
             "rolesV1": true,
             "roleMapping": true,
-            "secretsManagement": true
+            "secretsManagement": true,
+            "saasApplications": true
             {% else %}
             {% if console.ui.legacy_mode.items() is defined %}
             {% for key, value in console.ui.legacy_mode.items() %}
