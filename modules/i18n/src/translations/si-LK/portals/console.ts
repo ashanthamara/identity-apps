@@ -709,6 +709,13 @@ export const console: ConsoleNS = {
     },
     consoleSettings: {
         administrators: {
+            add: {
+                action: "පරිපාලක එකතු කරන්න",
+                options: {
+                    addExistingUser: "පවතින පරිශීලකයෙක් එක් කරන්න",
+                    inviteNewUser: "නව පරිශීලකයෙකුට ආරාධනා කරන්න"
+                }
+            },
             edit: {
                 backButton: "පරිපාලකයින් වෙත ආපසු යන්න"
             },
@@ -2887,7 +2894,7 @@ export const console: ConsoleNS = {
                                 },
                                 wsFedConfigurations: {
                                     labels: {
-                                        passiveSTSUrl: "Passive STS url"
+                                        passiveSTSUrl: "ws-federation url"
                                     }
                                 }
                             },
@@ -8017,7 +8024,7 @@ export const console: ConsoleNS = {
                         disableOrganization: {
                             disableActionTitle: "ආයතනය අක්‍රීය කරන්න",
                             enableActionTitle: "ආයතනය සක්‍රීය කරන්න",
-                            subheader: "ආයතනයක් අක්‍රිය කිරීමෙන් ඔබට ආයතනයට සම්බන්ධ ප්‍රවේශය අහිමි විය හැක. කල්පනාකාරීව ඉදිරියට යන්න."
+                            subheader: "සංවිධානයක් අක්‍රිය කිරීමෙන් එය සියලුම පරිශීලකයින් සඳහා පිවිසිය නොහැකි වනු ඇත."
                         },
                         subHeader: "ඔබට මෙම ආයතනය මැකීමට අවශ්‍ය බව විශ්වාසද?",
                         title: "ආයතනය මකන්න"
@@ -9590,6 +9597,23 @@ export const console: ConsoleNS = {
                             fileFormatTitle: "CSV ගොනු ආකෘතිය",
                             fileFormatContent: "CSV ගොනුවේ ශීර්ෂයන් දේශීය ගුණාංගවලට සිතියම්ගත කර ඇති <1>පරිශීලක ගුණාංග</1> විය යුතුය.",
                             fileFormatSampleHeading: "නියැදි CSV ගොනු ආකෘතිය:"
+                        }
+                    },
+                    inviteParentUserWizard: {
+                        totalInvitations: "සම්පූර්ණ ආරාධනා",
+                        successAlert: {
+                            description: "පරිශීලකයා(යන්) හට සාර්ථකව ආරාධනා කරන ලදී.",
+                            message: "ආරාධනා යවා ඇත"
+                        },
+                        errorAlert: {
+                            description: "{{ failedCount }} පරිශීලකයා(යන්) හට ආරාධනා කිරීමේදී දෝෂයක් සිදු විය.",
+                            message: "සමාලෝචනය අවශ්‍යයි"
+                        },
+                        tableMessages: {
+                            userNotFound: "පරිශීලක හමු නොවීය",
+                            activeInvitationExists: "පරිශීලකයා සඳහා සක්‍රිය ආරාධනාවක් දැනටමත් පවතී",
+                            userEmailNotFound: "ආරාධිත පරිශීලකයාගේ විද්‍යුත් තැපෑල සොයා ගැනීමට නොහැකි විය",
+                            userAlreadyExist: "පරිශීලක දැනටමත් පවතී"
                         }
                     },
                     changePasswordModal: {

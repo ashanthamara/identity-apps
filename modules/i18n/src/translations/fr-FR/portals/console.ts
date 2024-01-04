@@ -701,6 +701,13 @@ export const console: ConsoleNS = {
     },
     consoleSettings: {
         administrators: {
+            add: {
+                action: "Ajouter l'administrateur",
+                options: {
+                    addExistingUser: "Ajouter l'utilisateur existant",
+                    inviteNewUser: "Inviter un nouvel utilisateur"
+                }
+            },
             edit: {
                 backButton: "Retourner aux administrateurs"
             },
@@ -2735,7 +2742,7 @@ export const console: ConsoleNS = {
                     inboundSTS: {
                         fields: {
                             realm: {
-                                hint: "Saisir l'identifiant du domaine STS passif",
+                                hint: "Saisissez l'identifiant du domaine ws-federation",
                                 label: "Domaine d'identité",
                                 placeholder: "Saisir le domaine.",
                                 validations: {
@@ -8189,8 +8196,8 @@ export const console: ConsoleNS = {
                         disableOrganization: {
                             disableActionTitle: "Désactiver l'organisation",
                             enableActionTitle: "Activer l'organisation",
-                            subheader: "La désactivation d'une organisation peut vous faire perdre l'accès à" +
-                                " l'organisation associée. Procéder avec prudence."
+                            subheader: "La désactivation d'une organisation la rendra indisponible pour tous " +
+                                "les utilisateurs."
                         },
                         subHeader: "Voulez-vous vraiment supprimer cette organisation?",
                         title: "Supprimer l'organisation"
@@ -9812,6 +9819,24 @@ export const console: ConsoleNS = {
                             fileFormatContent: "Les en-têtes du fichier CSV doivent être des attributs utilisateur " +
                                 "mappés aux <1>attributs locaux</1>.",
                             fileFormatSampleHeading: "Exemple de format de fichier CSV:"
+                        }
+                    },
+                    inviteParentUserWizard: {
+                        totalInvitations: "Nombre total d'invitations",
+                        successAlert: {
+                            description: "L'invitation du ou des utilisateurs a réussi.",
+                            message: "Invitation(s) envoyée(s)"
+                        },
+                        errorAlert: {
+                            description: "Une erreur s'est produite lors de l'invitation de {{ failedCount }} " +
+                                "utilisateur(s).",
+                            message: "Examen requis"
+                        },
+                        tableMessages: {
+                            userNotFound: "Utilisateur non trouvé",
+                            activeInvitationExists: "Une invitation active existe déjà pour l'utilisateur",
+                            userEmailNotFound: "Impossible de trouver l'e-mail de l'utilisateur invité",
+                            userAlreadyExist: "L'utilisateur existe déjà"
                         }
                     },
                     changePasswordModal: {

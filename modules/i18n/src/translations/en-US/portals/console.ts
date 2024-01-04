@@ -703,6 +703,13 @@ export const console: ConsoleNS = {
     },
     consoleSettings: {
         administrators: {
+            add: {
+                action: "Add Administrator",
+                options: {
+                    addExistingUser: "Add Existing User",
+                    inviteNewUser: "Invite New User"
+                }
+            },
             edit: {
                 backButton: "Go back to Administrators"
             },
@@ -1223,7 +1230,7 @@ export const console: ConsoleNS = {
                                     message: "Application sharing failed!"
                                 },
                                 success: {
-                                    description: "Application Shared with the organization(s) successfully",
+                                    description: "Application shared with the organization(s) successfully",
                                     message: "Application shared!"
                                 }
                             },
@@ -1241,7 +1248,7 @@ export const console: ConsoleNS = {
                                     message: "Application sharing stop failed!"
                                 },
                                 success: {
-                                    description: "Application Sharing stopped with the {{organization}} successfully",
+                                    description: "Application sharing stopped with the {{organization}} successfully",
                                     message: "Application shared stopped successfully!"
                                 }
                             },
@@ -2700,7 +2707,7 @@ export const console: ConsoleNS = {
                     inboundSTS: {
                         fields: {
                             realm: {
-                                hint: "Enter realm identifier for passive sts",
+                                hint: "Enter realm identifier for ws-federation",
                                 label: "Realm",
                                 placeholder: "Enter realm.",
                                 validations: {
@@ -2927,7 +2934,7 @@ export const console: ConsoleNS = {
                                 },
                                 wsFedConfigurations: {
                                     labels: {
-                                        passiveSTSUrl: "Passive STS URL"
+                                        passiveSTSUrl: "WS-Federation URL"
                                     }
                                 }
                             },
@@ -9974,8 +9981,8 @@ export const console: ConsoleNS = {
                         disableOrganization: {
                             disableActionTitle: "Disable Organization",
                             enableActionTitle: "Enable Organization",
-                            subheader: "Disabling an organization can make you lose access to the " +
-                                "organization relates. Proceed with caution."
+                            subheader: "Disabling an organization will make it unavailable for all users. " +
+                                "Proceed with caution."
                         },
                         subHeader: "Are you sure you want to delete this organization?",
                         title: "Delete Organization"
@@ -11554,6 +11561,23 @@ export const console: ConsoleNS = {
                             fileFormatContent: "Headers of the CSV file should be user attributes that are " +
                                     "mapped to <1>local attributes</1>.",
                             fileFormatSampleHeading: "Sample CSV file format:"
+                        }
+                    },
+                    inviteParentUserWizard: {
+                        totalInvitations: "Total Invitation(s)",
+                        successAlert: {
+                            description: "Successfully invited the user(s).",
+                            message: "Invitation(s) Sent"
+                        },
+                        errorAlert: {
+                            description: "An error occurred while inviting {{ failedCount }} user(s).",
+                            message: "Review Required"
+                        },
+                        tableMessages: {
+                            userNotFound: "User not found",
+                            activeInvitationExists: "An active invitation for the user already exists",
+                            userEmailNotFound: "Could not find the email of the invited user",
+                            userAlreadyExist: "User already exists"
                         }
                     },
                     changePasswordModal: {

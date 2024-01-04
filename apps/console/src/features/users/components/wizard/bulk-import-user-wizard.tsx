@@ -77,6 +77,7 @@ import {
     getCertificateIllustrations,
     history
 } from "../../../core";
+import { useGetCurrentOrganizationType } from "../../../organizations/hooks/use-get-organization-type";
 import { PatchRoleDataInterface } from "../../../roles/models";
 import { getAUserStore, getUserStores } from "../../../userstores/api";
 import { PRIMARY_USERSTORE } from "../../../userstores/constants";
@@ -171,6 +172,7 @@ export const BulkImportUserWizard: FunctionComponent<BulkImportUserInterface> = 
     const { closeWizard, userstore, ["data-componentid"]: componentId } = props;
 
     const { t } = useTranslation();
+    const { isSubOrganization } = useGetCurrentOrganizationType();
 
     const dispatch: Dispatch = useDispatch();
 
@@ -203,8 +205,7 @@ export const BulkImportUserWizard: FunctionComponent<BulkImportUserInterface> = 
 
     const {
         data: groupList,
-        error: groupsError,
-        isLoading: isGroupsListRequestLoading
+        error: groupsError
     } = useGroupList(selectedUserStore, "members", null, true);
 
     useEffect(() => {
@@ -1421,10 +1422,7 @@ export const BulkImportUserWizard: FunctionComponent<BulkImportUserInterface> = 
             || isSubmitting
             || hasError
             || !emailData
-            || emailData?.length === 0
-            || !groupsData
-            || isGroupsListRequestLoading
-            || groupsData?.length === 0;
+            || emailData?.length === 0;
     };
 
     const userStoreDropDown = (): ReactElement => {
@@ -1829,15 +1827,32 @@ export const BulkImportUserWizard: FunctionComponent<BulkImportUserInterface> = 
                                 "fileFormatTitle") }
                         </Heading>
                         <p>
-                            <Trans
-                                i18nKey={
-                                    "console:manage.features.user.modals.bulkImportUserWizard.sidePanel." +
-                                    "fileFormatContent"
-                                }
-                            >
-                                Headers of the CSV file should be user attributes that are mapped to
-                                local <Link onClick={ navigateToSCIMAttributesPage }>attribute names</Link>.
-                            </Trans>
+                            {
+                                !isSubOrganization()
+                                    ? (
+                                        <Trans
+                                            i18nKey={
+                                                "console:manage.features.user.modals.bulkImportUserWizard.sidePanel." +
+                                            "fileFormatContent"
+                                            }
+                                        >
+                                            Headers of the CSV file should be user attributes that are mapped to
+                                            local <Link onClick={ navigateToSCIMAttributesPage }>attribute names</Link>.
+                                        </Trans>
+                                    )
+                                    : (
+                                        <Trans
+                                            i18nKey={
+                                                "console:manage.features.user.modals.bulkImportUserWizard.sidePanel." +
+                                                "fileFormatContent"
+                                            }
+                                        >
+                                            Headers of the CSV file should be user attributes that are mapped to
+                                            <b>local attribute</b> names.
+                                        </Trans>
+                                    )
+                            }
+
                         </p>
                         <p> { t("console:manage.features.user.modals.bulkImportUserWizard.sidePanel." +
                                 "fileFormatSampleHeading") }</p>

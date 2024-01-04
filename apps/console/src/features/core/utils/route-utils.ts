@@ -314,8 +314,9 @@ export class RouteUtils {
             AppConstants.getPaths().get("LOGIN_AND_REGISTRATION"),
             AppConstants.getPaths().get("USERNAME_VALIDATION_EDIT"),
             AppConstants.getPaths().get("ALTERNATIVE_LOGIN_IDENTIFIER_EDIT"),
-            AppConstants.getPaths().get("ADMIN_ADVISORY_BANNER_EDIT"),
-            AppConstants.getPaths().get("MULTI_ATTRIBUTE_LOGIN")
+            AppConstants.getPaths().get("MULTI_ATTRIBUTE_LOGIN"),
+            AppConstants.getPaths().get("VALIDATION_CONFIG_EDIT"),
+            AppConstants.getPaths().get("ORGANIZATION_DISCOVERY_DOMAINS")
         ];
 
         const CategoryMappedRoutes: Omit<RouteInterface, "showOnSidePanel">[] = [
@@ -330,21 +331,25 @@ export class RouteUtils {
             {
                 category: build,
                 id: "applications",
-                order: 1
+                order: 1,
+                selected: history.location.pathname.includes("applications")
             },
             {
                 category: build,
                 id: "apiResources",
-                order: 3
+                order: 3,
+                selected: history.location.pathname.includes("/api-resources")
             },
             {
                 category: build,
                 id: "identityProviders",
-                order: 2
+                order: 2,
+                selected: history.location.pathname.includes("/connections")
             },
             {
                 category: organizations,
-                id: "organizations"
+                id: "organizations",
+                selected: history.location.pathname.includes("/organizations")
             },
             {
                 category: manage,
@@ -405,8 +410,8 @@ export class RouteUtils {
                 parent: branding
             },
             {
-                category: settings,
-                id: "email-and-sms",
+                category: other,
+                id: "notificationChannels",
                 selected: history.location.pathname === AppConstants.getPaths().get("EMAIL_PROVIDER") ||
                     history.location.pathname === AppConstants.getPaths().get("SMS_PROVIDER") ||
                     history.location.pathname === AppConstants.getPaths().get("EMAIL_AND_SMS")
@@ -417,11 +422,13 @@ export class RouteUtils {
             },
             {
                 category: settings,
-                id: "consoleSettings"
+                id: "consoleSettings",
+                selected: history.location.pathname.includes("/settings")
             },
             {
                 category: settings,
-                id: "server"
+                id: "server",
+                selected: history.location.pathname.includes("server")
             },
             {
                 category: build,
@@ -436,14 +443,6 @@ export class RouteUtils {
                 category: build,
                 id: "smsProviders",
                 parent: branding
-            },
-            {
-                category: other,
-                id: "remoteLogging"
-            },
-            {
-                category: settings,
-                id: "eventPublishing"
             },
             {
                 category: settings,

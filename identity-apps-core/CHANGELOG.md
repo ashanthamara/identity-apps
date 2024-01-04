@@ -1,5 +1,49 @@
 # @wso2is/identity-apps-core
 
+## 2.0.111
+
+### Patch Changes
+
+- [#5053](https://github.com/wso2/identity-apps/pull/5053) [`13266edfe2`](https://github.com/wso2/identity-apps/commit/13266edfe28afa6e7bdadb98beee4d0277c0b390) Thanks [@ayeshajay](https://github.com/ayeshajay)! - Add brazil language support for IS
+
+## 2.0.110
+
+### Patch Changes
+
+- [#5052](https://github.com/wso2/identity-apps/pull/5052) [`8c344f3ec4`](https://github.com/wso2/identity-apps/commit/8c344f3ec4ced3c93ede47a1c0accd023f2d73e0) Thanks [@brionmario](https://github.com/brionmario)! - Enable sub org logins for Console
+
+- Updated dependencies [[`8c344f3ec4`](https://github.com/wso2/identity-apps/commit/8c344f3ec4ced3c93ede47a1c0accd023f2d73e0)]:
+  - @wso2is/theme@2.0.53
+
+## 2.0.109
+
+### Patch Changes
+
+- [#5129](https://github.com/wso2/identity-apps/pull/5129) [`136be24845`](https://github.com/wso2/identity-apps/commit/136be248454dc35312db32e8e6092f71f18d5be9) Thanks [@pavinduLakshan](https://github.com/pavinduLakshan)! - Add missing i18n mappings for org sso page when email domain discovery is enabled
+
+* [#5128](https://github.com/wso2/identity-apps/pull/5128) [`3e05f7c015`](https://github.com/wso2/identity-apps/commit/3e05f7c0157657798b982446608866d0d445809f) Thanks [@DilshanSenarath](https://github.com/DilshanSenarath)! - Fix the checkbox branding issue
+
+* Updated dependencies [[`f506af671f`](https://github.com/wso2/identity-apps/commit/f506af671ffdaca6414fe8ca4b90a635b32684f6), [`3e05f7c015`](https://github.com/wso2/identity-apps/commit/3e05f7c0157657798b982446608866d0d445809f)]:
+  - @wso2is/theme@2.0.52
+
+## 2.0.108
+
+### Patch Changes
+
+- [#5117](https://github.com/wso2/identity-apps/pull/5117) [`53fae3f43a`](https://github.com/wso2/identity-apps/commit/53fae3f43a3dc3284e80ddc6ef35fc53cc62f6ac) Thanks [@thanujalk](https://github.com/thanujalk)! - Release identity-apps-core
+
+## 2.0.107
+
+### Patch Changes
+
+- [#5115](https://github.com/wso2/identity-apps/pull/5115) [`6b5e3cd2dd`](https://github.com/wso2/identity-apps/commit/6b5e3cd2dd0b33e39a0decbee5d60d5ae514bf52) Thanks [@ChanikaRuchini](https://github.com/ChanikaRuchini)! - Fix server startup errors in legacy runtime
+
+## 2.0.106
+
+### Patch Changes
+
+- [#5105](https://github.com/wso2/identity-apps/pull/5105) [`8e8f6b4a5f`](https://github.com/wso2/identity-apps/commit/8e8f6b4a5f68f67b3b198b24e15bb02f11d605b1) Thanks [@thanujalk](https://github.com/thanujalk)! - Disable self signup for Console
+
 ## 2.0.105
 
 ### Patch Changes
